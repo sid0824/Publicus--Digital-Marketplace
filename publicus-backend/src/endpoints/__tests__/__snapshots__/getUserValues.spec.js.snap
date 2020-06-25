@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getUserValues should get values for a user 1`] = `
+"SELECT * 
+          FROM Users
+          WHERE userId = 'MOCK_COGNITO_ID'"
+`;
+
+exports[`getUserValues should get values for a user 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`getUserValues should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`completeSurvey should add results of a survey to the database 1`] = `
+"INSERT INTO Results(surveyId, creatorId, results) 
+          VALUES( 'MOCK_SURVEY_ID', 'MOCK_COGNITO_ID', '%5B%7B%22MOCK%22%3A%22RESULTS%22%7D%5D' )"
+`;
+
+exports[`completeSurvey should add results of a survey to the database 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`completeSurvey should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

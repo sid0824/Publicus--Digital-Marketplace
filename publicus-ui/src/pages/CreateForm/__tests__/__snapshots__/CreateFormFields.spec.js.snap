@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateFormFields should change create form config value 1`] = `
+Object {
+  "incrementor": 1,
+  "max": 100,
+  "min": 0,
+  "prompt": "What is Your... ?",
+  "rules": Array [
+    "required",
+  ],
+  "startingNumber": 0,
+  "type": "NEW_TYPE",
+}
+`;
+
+exports[`CreateFormFields should move form item down 1`] = `
+Object {
+  "1": Object {
+    "incrementor": 1,
+    "max": 100,
+    "min": 0,
+    "prompt": "What is Your... ?",
+    "rules": Array [
+      "required",
+    ],
+    "startingNumber": 0,
+    "type": "numberInput",
+  },
+  "2": Object {
+    "prompt": "r email",
+    "rules": Array [
+      "email",
+      "required",
+    ],
+    "type": "textInput",
+  },
+  "3": Object {
+    "options": Array [
+      "1",
+      "2",
+    ],
+    "prompt": "What is Your... ?",
+    "rules": Array [
+      "required",
+    ],
+    "type": "select",
+  },
+  "4": Object {
+    "prompt": "What time is the...?",
+    "rules": Array [
+      "required",
+    ],
+    "type": "timePicker",
+  },
+  "5": Object {
+    "defaultValue": false,
+    "prompt": "What is Your... ?",
+    "rules": Array [],
+    "type": "switch",
+  },
+  "6": Object {
+    "prompt": "What date is the...?",
+    "rules": Array [],
+    "showTime": true,
+    "type": "datePicker",
+  },
+  "7": Object {
+    "prompt": "What is Your... ?",
+    "radioOptions": Array [
+      "1",
+      "2",
+      "3",
+    ],
+    "rules": Array [],
+    "type": "radio",
+  },
+}
+`;
+
+exports[`CreateFormFields should move form item up 1`] = `
+Object {
+  "1": Object {
+    "incrementor": 1,
+    "max": 100,
+    "min": 0,
+    "prompt": "What is Your... ?",
+    "rules": Array [
+      "required",
+    ],
+    "startingNumber": 0,
+    "type": "numberInput",
+  },
+  "2": Object {
+    "prompt": "r email",
+    "rules": Array [
+      "email",
+      "required",
+    ],
+    "type": "textInput",
+  },
+  "3": Object {
+    "options": Array [
+      "1",
+      "2",
+    ],
+    "prompt": "What is Your... ?",
+    "rules": Array [
+      "required",
+    ],
+    "type": "select",
+  },
+  "4": Object {
+    "defaultValue": false,
+    "prompt": "What is Your... ?",
+    "rules": Array [],
+    "type": "switch",
+  },
+  "5": Object {
+    "prompt": "What time is the...?",
+    "rules": Array [
+      "required",
+    ],
+    "type": "timePicker",
+  },
+  "6": Object {
+    "prompt": "What date is the...?",
+    "rules": Array [],
+    "showTime": true,
+    "type": "datePicker",
+  },
+  "7": Object {
+    "prompt": "What is Your... ?",
+    "radioOptions": Array [
+      "1",
+      "2",
+      "3",
+    ],
+    "rules": Array [],
+    "type": "radio",
+  },
+}
+`;
+
+exports[`CreateFormFields should render create form fields 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "changeConfig": [MockFunction],
+      "changeConfigValue": [Function],
+      "config": Object {
+        "1": Object {
+          "prompt": "r email",
+          "rules": Array [
+            "email",
+            "required",
+          ],
+          "type": "textInput",
+        },
+        "2": Object {
+          "incrementor": 1,
+          "max": 100,
+          "min": 0,
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "startingNumber": 0,
+          "type": "numberInput",
+        },
+        "3": Object {
+          "options": Array [
+            "1",
+            "2",
+          ],
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "select",
+        },
+        "4": Object {
+          "defaultValue": false,
+          "prompt": "What is Your... ?",
+          "rules": Array [],
+          "type": "switch",
+        },
+        "5": Object {
+          "prompt": "What time is the...?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "timePicker",
+        },
+        "6": Object {
+          "prompt": "What date is the...?",
+          "rules": Array [],
+          "showTime": true,
+          "type": "datePicker",
+        },
+        "7": Object {
+          "prompt": "What is Your... ?",
+          "radioOptions": Array [
+            "1",
+            "2",
+            "3",
+          ],
+          "rules": Array [],
+          "type": "radio",
+        },
+      },
+      "form": "MOCK_FORM",
+      "moveFormItemDown": [Function],
+      "moveFormItemUp": [Function],
+    }
+  }
+>
+  <h1>
+    Form Fields
+  </h1>
+  <Form
+    colon={true}
+    hideRequiredMark={false}
+    layout="horizontal"
+    onSubmit={[Function]}
+  >
+    <Component
+      id="1"
+      key="1"
+    />
+    <Component
+      id="2"
+      key="2"
+    />
+    <Component
+      id="3"
+      key="3"
+    />
+    <Component
+      id="4"
+      key="4"
+    />
+    <Component
+      id="5"
+      key="5"
+    />
+    <Component
+      id="6"
+      key="6"
+    />
+    <Component
+      id="7"
+      key="7"
+    />
+  </Form>
+</ContextProvider>
+`;

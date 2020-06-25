@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`viewFormsForApproval should fail if user isnt admin 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 401,
+}
+`;
+
+exports[`viewFormsForApproval should fetch forms that require approval 1`] = `"SELECT * FROM Surveys WHERE publishedStatus = 1"`;
+
+exports[`viewFormsForApproval should fetch forms that require approval 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`viewFormsForApproval should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

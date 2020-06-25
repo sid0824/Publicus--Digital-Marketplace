@@ -1,0 +1,449 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Administration should add admin 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/createAdmin",
+  Object {
+    "body": Object {
+      "email": "MOCK_EMAIL",
+    },
+  },
+]
+`;
+
+exports[`Administration should approve form 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/modifySurveyStatus",
+  Object {
+    "body": Object {
+      "status": 3,
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+    },
+  },
+]
+`;
+
+exports[`Administration should approve form 2`] = `
+Array [
+  "prod-publicus-app-api",
+  "/viewFormsForApproval",
+  Object {},
+]
+`;
+
+exports[`Administration should approve form 3`] = `
+Array [
+  "Approved form",
+]
+`;
+
+exports[`Administration should reject form 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/modifySurveyStatus",
+  Object {
+    "body": Object {
+      "status": 2,
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+    },
+  },
+]
+`;
+
+exports[`Administration should reject form 2`] = `
+Array [
+  "prod-publicus-app-api",
+  "/viewFormsForApproval",
+  Object {},
+]
+`;
+
+exports[`Administration should reject form 3`] = `
+Array [
+  "Rejected form",
+]
+`;
+
+exports[`Administration should render administration page 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "row",
+      "height": "100%",
+      "marginLeft": "12%",
+      "marginRight": "12%",
+      "marginTop": 10,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "marginRight": 15,
+        "width": "50%",
+      }
+    }
+  >
+    <h2>
+      Administrator Actions
+    </h2>
+    <span>
+      Make New Administrator
+    </span>
+    <Input
+      onChange={[Function]}
+      placeholder="Enter the email address of a new administrator"
+      style={
+        Object {
+          "marginBottom": 3,
+          "width": "calc(100% - 120px)",
+        }
+      }
+      type="text"
+      value=""
+    />
+    <Button
+      block={false}
+      ghost={false}
+      htmlType="button"
+      loading={false}
+      onClick={[Function]}
+      type="primary"
+    >
+      Submit
+    </Button>
+  </div>
+  <div
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <h2>
+      Forms To Review
+    </h2>
+    <div
+      style={
+        Object {
+          "height": "calc(100% - 50px)",
+          "overflowY": "scroll",
+        }
+      }
+    >
+      <Collapse
+        accordion={true}
+        bordered={true}
+        expandIconPosition="left"
+        openAnimation={
+          Object {
+            "appear": [MockFunction],
+            "enter": [MockFunction],
+            "leave": [MockFunction],
+          }
+        }
+      >
+        <CollapsePanel
+          header={
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "minWidth": 170,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "marginTop": 4,
+                  }
+                }
+              >
+                a
+              </span>
+              <div>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  type="primary"
+                >
+                  Approve
+                </Button>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "marginLeft": 4,
+                    }
+                  }
+                  type="danger"
+                >
+                  Reject
+                </Button>
+              </div>
+            </div>
+          }
+          key="2d239420-f49d-11e9-8487-c5a7ea76fe8d"
+        >
+          <Link
+            to="/completeForm?surveyId=2d239420-f49d-11e9-8487-c5a7ea76fe8d&creatorId=MOCK_IDENTITY"
+          >
+            View Form
+          </Link>
+          <br />
+          <br />
+          <Link
+            to="/marketplace?search=ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7"
+          >
+            View Other Forms By This User
+          </Link>
+          <br />
+          <br />
+          <strong>
+            Form Image
+          </strong>
+          <br />
+          <FormImage
+            image="https://designshack.net/wp-content/uploads/placeholder-image.png"
+          />
+        </CollapsePanel>
+        <CollapsePanel
+          header={
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "minWidth": 170,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "marginTop": 4,
+                  }
+                }
+              >
+                a
+              </span>
+              <div>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  type="primary"
+                >
+                  Approve
+                </Button>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "marginLeft": 4,
+                    }
+                  }
+                  type="danger"
+                >
+                  Reject
+                </Button>
+              </div>
+            </div>
+          }
+          key="b26304a0-f49c-11e9-8487-c5a7ea76fe8d"
+        >
+          <Link
+            to="/completeForm?surveyId=b26304a0-f49c-11e9-8487-c5a7ea76fe8d&creatorId=MOCK_IDENTITY"
+          >
+            View Form
+          </Link>
+          <br />
+          <br />
+          <Link
+            to="/marketplace?search=ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7"
+          >
+            View Other Forms By This User
+          </Link>
+          <br />
+          <br />
+          <strong>
+            Form Image
+          </strong>
+          <br />
+          <FormImage
+            image="https://designshack.net/wp-content/uploads/placeholder-image.png"
+          />
+        </CollapsePanel>
+        <CollapsePanel
+          header={
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "minWidth": 170,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "marginTop": 4,
+                  }
+                }
+              >
+                After-Edit
+              </span>
+              <div>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  type="primary"
+                >
+                  Approve
+                </Button>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "marginLeft": 4,
+                    }
+                  }
+                  type="danger"
+                >
+                  Reject
+                </Button>
+              </div>
+            </div>
+          }
+          key="ba665a40-f58b-11e9-9b29-99ffbf733bb5"
+        >
+          <Link
+            to="/completeForm?surveyId=ba665a40-f58b-11e9-9b29-99ffbf733bb5&creatorId=MOCK_IDENTITY"
+          >
+            View Form
+          </Link>
+          <br />
+          <br />
+          <Link
+            to="/marketplace?search=ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7"
+          >
+            View Other Forms By This User
+          </Link>
+          <br />
+          <br />
+          <strong>
+            Form Image
+          </strong>
+          <br />
+          <FormImage
+            image="https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a"
+          />
+        </CollapsePanel>
+        <CollapsePanel
+          header={
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "minWidth": 170,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "marginTop": 4,
+                  }
+                }
+              >
+                b
+              </span>
+              <div>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  type="primary"
+                >
+                  Approve
+                </Button>
+                <Button
+                  block={false}
+                  ghost={false}
+                  htmlType="button"
+                  loading={false}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "marginLeft": 4,
+                    }
+                  }
+                  type="danger"
+                >
+                  Reject
+                </Button>
+              </div>
+            </div>
+          }
+          key="4fe4b2c0-f4a5-11e9-87b0-6785951dc893"
+        >
+          <Link
+            to="/completeForm?surveyId=4fe4b2c0-f4a5-11e9-87b0-6785951dc893&creatorId=MOCK_IDENTITY"
+          >
+            View Form
+          </Link>
+          <br />
+          <br />
+          <Link
+            to="/marketplace?search=ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7"
+          >
+            View Other Forms By This User
+          </Link>
+          <br />
+          <br />
+          <strong>
+            Form Image
+          </strong>
+          <br />
+          <FormImage
+            image="https://designshack.net/wp-content/uploads/placeholder-image.png"
+          />
+        </CollapsePanel>
+      </Collapse>
+    </div>
+  </div>
+</div>
+`;

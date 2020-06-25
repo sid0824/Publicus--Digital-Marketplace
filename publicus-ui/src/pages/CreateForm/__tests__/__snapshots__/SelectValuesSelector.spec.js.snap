@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectValuesSelector should add new select value option 1`] = `
+Array [
+  3,
+  "options",
+  Array [
+    "option1",
+    "option2",
+  ],
+]
+`;
+
+exports[`SelectValuesSelector should add new select value option 2`] = `
+Object {
+  "currentInput": "",
+  "currentTagInput": "",
+}
+`;
+
+exports[`SelectValuesSelector should render select values selector 1`] = `
+<Select
+  choiceTransitionName="zoom"
+  defaultValue={Array []}
+  dropdownRender={[Function]}
+  mode="multiple"
+  onChange={[Function]}
+  onSearch={[Function]}
+  placeholder="Add values for the select"
+  showSearch={false}
+  size="default"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+  transitionName="slide-up"
+  value={
+    Array [
+      "1",
+      "2",
+    ]
+  }
+/>
+`;
+
+exports[`SelectValuesSelector should update current select value option 1`] = `
+Array [
+  3,
+  "options",
+  Array [
+    "option1",
+    "option2",
+  ],
+]
+`;
+
+exports[`SelectValuesSelector should update current select value option 2`] = `
+Object {
+  "currentInput": "option1",
+}
+`;

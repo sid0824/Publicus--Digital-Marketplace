@@ -1,0 +1,73 @@
+[
+  {
+    "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+    "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    "price": 1,
+    "form": "{}",
+    "description": "a",
+    "name": "a",
+    "publishedStatus": 0,
+    "receiveNotifications": 1,
+    "redirect": "",
+    "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+    "instructions": null,
+    "numResponses": null,
+    "myRating": 2.5,
+    "tags": []
+  },
+  {
+    "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+    "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    "price": 1,
+    "form": "{}",
+    "description": "a",
+    "name": "a",
+    "publishedStatus": 2,
+    "receiveNotifications": 1,
+    "redirect": "",
+    "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+    "instructions": null,
+    "numResponses": null,
+    "myRating": null,
+    "tags": []
+  },
+  {
+    "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+    "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    "price": 2,
+    "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+    "description": "After-Edit-D",
+    "name": "After-Edit",
+    "publishedStatus": 3,
+    "receiveNotifications": 0,
+    "redirect": "",
+    "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+    "instructions": null,
+    "numResponses": null,
+    "myRating": null,
+    "tags": [
+      {
+        "tag": "123"
+      },
+      {
+        "tag": "213"
+      }
+    ]
+  },
+  {
+    "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+    "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    "price": 1,
+    "form": "%7B%7D",
+    "description": "b",
+    "name": "b",
+    "publishedStatus": 1,
+    "receiveNotifications": 1,
+    "redirect": "",
+    "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+    "instructions": null,
+    "numResponses": null,
+    "myRating": null,
+    "tags": []
+  }
+]

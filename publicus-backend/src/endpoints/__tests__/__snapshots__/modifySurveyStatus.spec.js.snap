@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`modifySurveyStatus should fail when a non admin tries to reject 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 401,
+}
+`;
+
+exports[`modifySurveyStatus should fail when a non owner tries to submit form 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 401,
+}
+`;
+
+exports[`modifySurveyStatus should publish form and send email 1`] = `
+"UPDATE Surveys 
+          SET publishedStatus = 3
+          WHERE surveyId = 'SURVEY_ID'"
+`;
+
+exports[`modifySurveyStatus should publish form and send email 2`] = `
+"SELECT *
+          FROM Surveys
+          WHERE surveyId = 'SURVEY_ID'"
+`;
+
+exports[`modifySurveyStatus should publish form and send email 3`] = `
+"SELECT email
+          FROM Users
+          WHERE userId = 'USER_ID'"
+`;
+
+exports[`modifySurveyStatus should publish form and send email 4`] = `
+Array [
+  "EMAIL",
+  Object {
+    "userId": "USER_ID",
+  },
+]
+`;
+
+exports[`modifySurveyStatus should publish form and send email 5`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`modifySurveyStatus should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Avatar should default form url on error 1`] = `
+Object {
+  "url": "http://s3.amazonaws.com/37assets/svn/765-default-avatar.png",
+}
+`;
+
+exports[`User Avatar should render current user avatar 1`] = `
+<img
+  alt="avatar"
+  height={100}
+  id="avatar"
+  onError={[Function]}
+  src="https://mock-path.png"
+  style={
+    Object {
+      "borderRadius": "30%",
+    }
+  }
+  width={100}
+/>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`viewPurchasedSurveys should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`viewPurchasedSurveys should return all purchased surveys 1`] = `"SELECT s.*, (SELECT COUNT(*) FROM Results p WHERE p.surveyId = s.surveyId AND p.creatorId = 'MOCK_COGNITO_ID' GROUP BY p.surveyId) as 'numResponses', (SELECT AVG(r.rating) FROM Ratings r WHERE r.surveyId = s.surveyId AND r.userId = 'MOCK_COGNITO_ID' GROUP BY r.surveyId) as 'myRating' FROM Surveys s WHERE s.surveyId In (SELECT surveyId FROM Licenses WHERE userId = 'MOCK_COGNITO_ID' )"`;
+
+exports[`viewPurchasedSurveys should return all purchased surveys 2`] = `
+Object {
+  "body": "[{\\"MOCK\\":\\"FORM\\"}]",
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Administration Route should redirect on unauthorised admin route 1`] = `
+<Route
+  other="props"
+  render={[Function]}
+/>
+`;
+
+exports[`Administration Route should redirect on unauthorised admin route 2`] = `
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
+`;
+
+exports[`Administration Route should render authorised admin route 1`] = `
+<Route
+  other="props"
+  render={[Function]}
+/>
+`;

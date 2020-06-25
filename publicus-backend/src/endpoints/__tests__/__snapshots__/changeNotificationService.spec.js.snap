@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changeNotificationService should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`changeNotificationService should return unauthorised when admin or owner 1`] = `
+"SELECT userId 
+          FROM Surveys 
+          WHERE surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`changeNotificationService should return unauthorised when admin or owner 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 401,
+}
+`;
+
+exports[`changeNotificationService should should update the notification value for a form 1`] = `
+"SELECT userId 
+          FROM Surveys 
+          WHERE surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`changeNotificationService should should update the notification value for a form 2`] = `
+"UPDATE Surveys 
+          SET receiveNotifications = 1
+          WHERE surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`changeNotificationService should should update the notification value for a form 3`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;

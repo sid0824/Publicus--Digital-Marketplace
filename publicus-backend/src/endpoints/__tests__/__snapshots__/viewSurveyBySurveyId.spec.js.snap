@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`viewSurveyBySurveyId should fail if survey ID doesnt exist 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`viewSurveyBySurveyId should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`viewSurveyBySurveyId should return the survey of the passed id 1`] = `
+"SELECT *
+          FROM Surveys
+          WHERE surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`viewSurveyBySurveyId should return the survey of the passed id 2`] = `
+"SELECT tag 
+          FROM Tags
+          WHERE surveyId = 'SURVEY_ID'"
+`;
+
+exports[`viewSurveyBySurveyId should return the survey of the passed id 3`] = `
+Object {
+  "body": "{\\"surveyId\\":\\"SURVEY_ID\\",\\"tags\\":[{\\"tag\\":\\"TAG\\"}]}",
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;

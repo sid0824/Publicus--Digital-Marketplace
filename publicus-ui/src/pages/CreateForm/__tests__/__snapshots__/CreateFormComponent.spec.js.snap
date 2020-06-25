@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateFormComponent should delete a create form question 1`] = `
+Object {
+  "1": Object {
+    "prompt": "r email",
+    "rules": Array [
+      "email",
+      "required",
+    ],
+    "type": "textInput",
+  },
+  "3": Object {
+    "options": Array [
+      "1",
+      "2",
+    ],
+    "prompt": "What is Your... ?",
+    "rules": Array [
+      "required",
+    ],
+    "type": "select",
+  },
+  "4": Object {
+    "defaultValue": false,
+    "prompt": "What is Your... ?",
+    "rules": Array [],
+    "type": "switch",
+  },
+  "5": Object {
+    "prompt": "What time is the...?",
+    "rules": Array [
+      "required",
+    ],
+    "type": "timePicker",
+  },
+  "6": Object {
+    "prompt": "What date is the...?",
+    "rules": Array [],
+    "showTime": true,
+    "type": "datePicker",
+  },
+  "7": Object {
+    "prompt": "What is Your... ?",
+    "radioOptions": Array [
+      "1",
+      "2",
+      "3",
+    ],
+    "rules": Array [],
+    "type": "radio",
+  },
+}
+`;
+
+exports[`CreateFormComponent should render a create form component 1`] = `
+<div
+  key="1"
+>
+  <strong>
+    1
+    . 
+  </strong>
+  r email
+  <br />
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "minWidth": 500,
+        }
+      }
+    >
+      <FormComponent
+        form="form"
+        id={1}
+        question={
+          Object {
+            "prompt": "r email",
+            "rules": Array [
+              "email",
+              "required",
+            ],
+            "type": "textInput",
+          }
+        }
+      />
+    </div>
+    <Icon
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "red",
+          "fontSize": 20,
+          "marginLeft": 10,
+          "marginTop": 10,
+        }
+      }
+      type="delete"
+    />
+    <Icon
+      style={
+        Object {
+          "color": "#4296f5",
+          "fontSize": 20,
+          "marginLeft": 10,
+          "marginTop": 10,
+        }
+      }
+      type="up"
+    />
+    <Icon
+      style={
+        Object {
+          "color": "#4296f5",
+          "fontSize": 20,
+          "marginLeft": 10,
+          "marginTop": 10,
+        }
+      }
+      type="down"
+    />
+    <Popover
+      content={
+        <Unknown
+          id={1}
+        />
+      }
+      mouseEnterDelay={0.1}
+      mouseLeaveDelay={0.1}
+      overlayStyle={Object {}}
+      placement="right"
+      title="Settings"
+      transitionName="zoom-big"
+      trigger="click"
+    >
+      <Icon
+        style={
+          Object {
+            "color": "grey",
+            "fontSize": 20,
+            "marginLeft": 10,
+            "marginTop": 10,
+          }
+        }
+        type="setting"
+      />
+    </Popover>
+  </div>
+</div>
+`;

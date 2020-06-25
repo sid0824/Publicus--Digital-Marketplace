@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Account should create and confirm an account 1`] = `
+Array [
+  Object {
+    "password": "MOCK_PASSWORD",
+    "username": "MOCK_EMAIL",
+  },
+]
+`;
+
+exports[`Create Account should create and confirm an account 2`] = `
+Object {
+  "confirming": false,
+  "confirmingUser": true,
+  "creating": false,
+  "firstname": "MOCK_FIRST",
+  "lastname": "MOCK_LAST",
+  "password": "MOCK_PASSWORD",
+  "username": "MOCK_EMAIL",
+}
+`;
+
+exports[`Create Account should create and confirm an account 3`] = `
+Array [
+  "prod-publicus-app-api",
+  "/user",
+  Object {
+    "body": Object {
+      "cognitoId": "MOCK_ID",
+      "email": "MOCK_EMAIL",
+      "firstname": "MOCK_FIRST",
+      "lastname": "MOCK_LAST",
+    },
+  },
+]
+`;
+
+exports[`Create Account should render the create account page 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "15%",
+      "marginRight": "15%",
+      "marginTop": "70px",
+      "width": "70%",
+    }
+  }
+>
+  <h1>
+    Enter Your Details
+  </h1>
+  <Form
+    colon={true}
+    hideRequiredMark={false}
+    layout="horizontal"
+    onSubmit={[Function]}
+  >
+    Email Address
+    <FormItem
+      hasFeedback={false}
+    >
+      <Input
+        placeholder="Enter your email address..."
+        type="text"
+      />
+    </FormItem>
+    First Name
+    <FormItem
+      hasFeedback={false}
+    >
+      <Input
+        placeholder="Enter your first name..."
+        type="text"
+      />
+    </FormItem>
+    Last Name
+    <FormItem
+      hasFeedback={false}
+    >
+      <Input
+        placeholder="Enter your last name..."
+        type="text"
+      />
+    </FormItem>
+    Password
+    <FormItem
+      hasFeedback={false}
+    >
+      <Input
+        placeholder="Enter your password..."
+        type="password"
+      />
+    </FormItem>
+    Confirm Your Password
+    <FormItem
+      hasFeedback={false}
+      help="Passwords Should Match"
+      validateStatus="error"
+    >
+      <Input
+        placeholder="Confirm your Password..."
+        type="password"
+      />
+    </FormItem>
+    <FormItem
+      hasFeedback={false}
+    >
+      <Button
+        block={false}
+        ghost={false}
+        htmlType="submit"
+        loading={false}
+        type="primary"
+      >
+        Submit
+      </Button>
+    </FormItem>
+  </Form>
+</div>
+`;
+
+exports[`Create Account should render the create account page 2`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "15%",
+      "marginRight": "15%",
+      "marginTop": "70px",
+      "width": "70%",
+    }
+  }
+>
+  <h1>
+    Enter Your Details
+  </h1>
+  <Form
+    colon={true}
+    hideRequiredMark={false}
+    layout="horizontal"
+    onSubmit={[Function]}
+  >
+    Check your email for the confirmation code
+    <FormItem
+      hasFeedback={false}
+    >
+      <Input
+        placeholder="Confirmation Code..."
+        type="text"
+      />
+    </FormItem>
+    <FormItem
+      hasFeedback={false}
+    >
+      <Button
+        block={false}
+        ghost={false}
+        htmlType="submit"
+        loading={false}
+        type="primary"
+      >
+        Submit
+      </Button>
+    </FormItem>
+  </Form>
+</div>
+`;

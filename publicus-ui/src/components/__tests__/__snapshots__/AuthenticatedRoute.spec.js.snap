@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authenticated Route should redirect on un-authorised authenticated route 1`] = `
+<Route
+  other="props"
+  render={[Function]}
+/>
+`;
+
+exports[`Authenticated Route should redirect on un-authorised authenticated route 2`] = `
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
+`;
+
+exports[`Authenticated Route should render authorised authenticated route 1`] = `
+<Route
+  other="props"
+  render={[Function]}
+/>
+`;

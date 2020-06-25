@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component should render date picker form component 1`] = `
+Array [
+  1,
+  Object {
+    "rules": Array [],
+  },
+]
+`;
+
+exports[`Form Component should render date picker form component 2`] = `
+<div>
+  <FormItem
+    hasFeedback={false}
+  >
+    <PickerWrapper
+      format="YYYY-MM-DD HH:mm:ss"
+      locale={Object {}}
+      onChange={[Function]}
+      onOk={[Function]}
+      onOpenChange={[Function]}
+      popupStyle={Object {}}
+      showTime={true}
+      transitionName="slide-up"
+    />
+  </FormItem>
+</div>
+`;
+
+exports[`Form Component should render number input form component 1`] = `
+Array [
+  1,
+  Object {
+    "initialValue": 0,
+    "rules": Array [
+      Object {
+        "message": "This field is compulsory",
+        "required": true,
+      },
+    ],
+  },
+]
+`;
+
+exports[`Form Component should render number input form component 2`] = `
+<div>
+  <FormItem
+    hasFeedback={false}
+  >
+    <InputNumber
+      max={100}
+      min={0}
+      step={1}
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+    />
+  </FormItem>
+</div>
+`;
+
+exports[`Form Component should render radio form component 1`] = `
+Array [
+  1,
+  Object {
+    "rules": Array [],
+  },
+]
+`;
+
+exports[`Form Component should render radio form component 2`] = `
+<div>
+  <FormItem
+    hasFeedback={false}
+  >
+    <RadioGroup
+      buttonStyle="outline"
+    >
+      <Radio
+        type="radio"
+        value="1"
+      >
+        1
+      </Radio>
+      <Radio
+        type="radio"
+        value="2"
+      >
+        2
+      </Radio>
+      <Radio
+        type="radio"
+        value="3"
+      >
+        3
+      </Radio>
+    </RadioGroup>
+  </FormItem>
+</div>
+`;
+
+exports[`Form Component should render select form component 1`] = `
+Array [
+  1,
+  Object {
+    "rules": Array [
+      Object {
+        "message": "This field is compulsory",
+        "required": true,
+      },
+    ],
+  },
+]
+`;
+
+exports[`Form Component should render select form component 2`] = `
+<div>
+  <FormItem
+    hasFeedback={false}
+  >
+    <Select
+      choiceTransitionName="zoom"
+      showSearch={false}
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+      transitionName="slide-up"
+    >
+      <Option
+        key="1"
+      >
+        1
+      </Option>
+      <Option
+        key="2"
+      >
+        2
+      </Option>
+    </Select>
+  </FormItem>
+</div>
+`;
+
+exports[`Form Component should render switch form component 1`] = `
+Array [
+  1,
+  Object {
+    "rules": Array [],
+  },
+]
+`;
+
+exports[`Form Component should render switch form component 2`] = `
+<div>
+  <FormItem
+    hasFeedback={false}
+  >
+    <Switch />
+  </FormItem>
+</div>
+`;
+
+exports[`Form Component should render text input form component 1`] = `
+Array [
+  1,
+  Object {
+    "rules": Array [
+      Object {
+        "message": "Value must be a email",
+        "type": "email",
+      },
+      Object {
+        "message": "This field is compulsory",
+        "required": true,
+      },
+    ],
+  },
+]
+`;
+
+exports[`Form Component should render text input form component 2`] = `
+<div>
+  <FormItem
+    hasFeedback={false}
+  >
+    <Input
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+      type="text"
+    />
+  </FormItem>
+</div>
+`;
+
+exports[`Form Component should render time picker form component 1`] = `
+Array [
+  1,
+  Object {
+    "rules": Array [
+      Object {
+        "message": "This field is compulsory",
+        "required": true,
+      },
+    ],
+  },
+]
+`;
+
+exports[`Form Component should render time picker form component 2`] = `
+<div>
+  <FormItem
+    hasFeedback={false}
+  >
+    <TimePicker
+      align={
+        Object {
+          "offset": Array [
+            0,
+            -2,
+          ],
+        }
+      }
+      focusOnOpen={true}
+      hideDisabledOptions={false}
+      placement="bottomLeft"
+      transitionName="slide-up"
+    />
+  </FormItem>
+</div>
+`;

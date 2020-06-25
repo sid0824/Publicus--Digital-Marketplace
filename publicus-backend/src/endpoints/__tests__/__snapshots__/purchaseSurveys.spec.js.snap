@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`purchaseSurveys should purchase surveys 1`] = `
+"SELECT price, userId, receiveNotifications
+          FROM Surveys 
+          WHERE surveyId = 'SURVEY_ID_1'OR surveyId = 'SURVEY_ID_2'"
+`;
+
+exports[`purchaseSurveys should purchase surveys 2`] = `"INSERT INTO Licenses(surveyId, userId) VALUES ( 'SURVEY_ID_1', 'MOCK_COGNITO_ID'),( 'SURVEY_ID_2', 'MOCK_COGNITO_ID');"`;
+
+exports[`purchaseSurveys should purchase surveys 3`] = `
+"SELECT * 
+          FROM Users
+          WHERE userId = 'USER_ID_2'"
+`;
+
+exports[`purchaseSurveys should purchase surveys 4`] = `"EMAIL"`;
+
+exports[`purchaseSurveys should purchase surveys 5`] = `
+Object {
+  "amount": 700,
+  "currency": "AUD",
+  "description": "Publicus - Survey Purchase",
+  "source": "TOKEN_ID",
+}
+`;
+
+exports[`purchaseSurveys should purchase surveys 6`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`purchaseSurveys should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deleteSurvey should delete a survey from the database 1`] = `"DELETE FROM Results WHERE surveyId = 'MOCK_SURVEY_ID'"`;
+
+exports[`deleteSurvey should delete a survey from the database 2`] = `"DELETE FROM Tags WHERE surveyId = 'MOCK_SURVEY_ID'"`;
+
+exports[`deleteSurvey should delete a survey from the database 3`] = `"DELETE FROM Surveys WHERE surveyId = 'MOCK_SURVEY_ID'"`;
+
+exports[`deleteSurvey should delete a survey from the database 4`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`deleteSurvey should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`deleteSurvey should return unauthorised when not admin or owner 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 401,
+}
+`;

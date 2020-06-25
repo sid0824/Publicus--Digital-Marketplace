@@ -1,0 +1,212 @@
+service: publicus-app-api
+
+package:
+  individually: true
+
+plugins:
+  - serverless-bundle
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: prod
+  region: ap-southeast-2
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ses:SendEmail
+        - s3:PutObject
+        - s3:GetObject
+      Resource:
+        - "*"
+
+resources:
+  - ${file(resources/api-gateway-errors.yml)}
+
+functions:
+  createSurvey:
+    handler: src/endpoints/createSurvey.main
+    events:
+      - http:
+          path: survey
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  editSurvey:
+    handler: src/endpoints/editSurvey.main
+    events:
+      - http:
+          path: survey/endpoints/{surveyId}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  search:
+    handler: src/endpoints/search.main
+    events:
+      - http:
+          path: search
+          method: get
+          cors: true
+
+  viewSurveyBySurveyId:
+    handler: src/endpoints/viewSurveyBySurveyId.main
+    events:
+      - http:
+          path: survey/{surveyId}
+          method: get
+          cors: true
+
+  viewOwnedSurveys:
+    handler: src/endpoints/viewOwnedSurveys.main
+    events:
+      - http:
+          path: survey/owned
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  viewPurchasedSurveys:
+    handler: src/endpoints/viewPurchasedSurveys.main
+    events:
+      - http:
+          path: survey/purchased
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  addComment:
+    handler: src/endpoints/addComment.main
+    events:
+      - http:
+          path: survey/{surveyId}/comment
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  viewCommentsBySurveyId:
+    handler: src/endpoints/viewCommentsBySurveyId.main
+    events:
+      - http:
+          path: survey/{surveyId}/comment
+          method: get
+          cors: true
+
+  createUser:
+    handler: src/endpoints/createUser.main
+    events:
+      - http:
+          path: user
+          method: post
+          cors: true
+
+  completeSurvey:
+    handler: src/endpoints/completeSurvey.main
+    events:
+      - http:
+          path: results/{surveyId}
+          method: post
+          cors: true
+
+  viewResults:
+    handler: src/endpoints/viewResults.main
+    events:
+      - http:
+          path: results/{surveyId}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  purchaseSurveys:
+    handler: src/endpoints/purchaseSurveys.main
+    events:
+      - http:
+          path: survey/purchase/
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  createAdmin:
+    handler: src/endpoints/createAdmin.main
+    events:
+      - http:
+          path: createAdmin/
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  modifySurveyStatus:
+    handler: src/endpoints/modifySurveyStatus.main
+    events:
+      - http:
+          path: modifySurveyStatus/
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  getUserValues:
+    handler: src/endpoints/getUserValues.main
+    events:
+      - http:
+          path: getUserValues/
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  viewFormsForApproval:
+    handler: src/endpoints/viewFormsForApproval.main
+    events:
+      - http:
+          path: viewFormsForApproval/
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  getUserAvatarPostUrl:
+    handler: src/endpoints/getUserAvatarPostUrl.main
+    events:
+      - http:
+          path: getUserAvatarPostUrl/
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  getFormImagePostUrl:
+    handler: src/endpoints/getFormImagePostUrl.main
+    events:
+      - http:
+          path: getFormImagePostUrl/{formId}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  addRating:
+    handler: src/endpoints/addRating.main
+    events:
+      - http:
+          path: survey/{surveyId}/rating
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  changeNotificationService:
+    handler: src/endpoints/changeNotificationService.main
+    events:
+      - http:
+          path: survey/{surveyId}/notifications
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  deleteSurvey:
+    handler: src/endpoints/deleteSurvey.main
+    events:
+      - http:
+          path: survey/{surveyId}/
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+

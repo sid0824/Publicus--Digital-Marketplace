@@ -1,0 +1,9 @@
+export const UploadBucket = '';
+export const SiteUrl = '';
+export const SourceEmail = '';
+export const AccessKeyId = '';
+export const SecretAccessKey = '';
+export const MySqlHost = '';
+export const MySqlUser = '';
+export const MySqlPassword = '';
+export const StripeSecretKey = "";

@@ -1,0 +1,1157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyForms should add a rating to a form 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/survey/2d239420-f49d-11e9-8487-c5a7ea76fe8d/rating",
+  Object {
+    "body": Object {
+      "rating": 2.5,
+    },
+  },
+]
+`;
+
+exports[`MyForms should change approval notification value of form 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/survey/2d239420-f49d-11e9-8487-c5a7ea76fe8d/notifications",
+  Object {
+    "body": Object {
+      "receiveNotifications": 1,
+    },
+  },
+]
+`;
+
+exports[`MyForms should change submission status of form 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "prod-publicus-app-api",
+      "/modifySurveyStatus",
+      Object {
+        "body": Object {
+          "status": 1,
+          "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": Promise {},
+    },
+  ],
+}
+`;
+
+exports[`MyForms should copy link to complete form 1`] = `"http://publicus-ui.s3-website-ap-southeast-2.amazonaws.com/completeForm?surveyId=2d239420-f49d-11e9-8487-c5a7ea76fe8d&creatorId=IDENTITY_ID"`;
+
+exports[`MyForms should render the my forms page 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "row",
+      "marginBottom": 100,
+      "marginLeft": "10%",
+      "marginRight": "10%",
+      "marginTop": 10,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingRight": 15,
+        "width": "50%",
+      }
+    }
+  >
+    <h1>
+      Owned Forms
+    </h1>
+    <Collapse
+      accordion={true}
+      bordered={true}
+      expandIconPosition="left"
+      openAnimation={
+        Object {
+          "appear": [Function],
+          "enter": [Function],
+          "leave": [Function],
+        }
+      }
+    >
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              a
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=2d239420-f49d-11e9-8487-c5a7ea76fe8d"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="2d239420-f49d-11e9-8487-c5a7ea76fe8d"
+      >
+        <strong>
+          Published State: 
+        </strong>
+        Not Submitted
+        <br />
+        <strong>
+          Number of responses: 
+        </strong>
+         
+        0
+        <div>
+          <br />
+          <strong>
+            Form Image
+          </strong>
+          <div
+            style={
+              Object {
+                "height": 180,
+                "marginBottom": 8,
+                "width": 270,
+              }
+            }
+          >
+            <FormImage
+              image="https://designshack.net/wp-content/uploads/placeholder-image.png"
+            />
+          </div>
+          <input
+            onChange={[Function]}
+            type="file"
+          />
+          <br />
+          <br />
+          <Button
+            block={false}
+            ghost={false}
+            htmlType="button"
+            loading={false}
+            onClick={[Function]}
+            style={
+              Object {
+                "marginRight": 4,
+              }
+            }
+            type="primary"
+          >
+            Submit for Approval
+          </Button>
+          <Popconfirm
+            cancelText="No"
+            disabled={false}
+            icon={
+              <Icon
+                style={
+                  Object {
+                    "color": "red ",
+                  }
+                }
+                type="close-circle"
+              />
+            }
+            okText="Yes"
+            okType="primary"
+            onConfirm={[Function]}
+            placement="topRight"
+            title="Are you sure you want to delete this form?"
+            transitionName="zoom-big"
+            trigger="click"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              htmlType="button"
+              loading={false}
+              style={
+                Object {
+                  "marginRight": 4,
+                }
+              }
+              type="danger"
+            >
+              Delete
+            </Button>
+          </Popconfirm>
+          <Link
+            to="/createForm?surveyId=2d239420-f49d-11e9-8487-c5a7ea76fe8d"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              htmlType="button"
+              loading={false}
+              type="primary"
+            >
+              Edit
+            </Button>
+          </Link>
+        </div>
+      </CollapsePanel>
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              a
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=b26304a0-f49c-11e9-8487-c5a7ea76fe8d"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="b26304a0-f49c-11e9-8487-c5a7ea76fe8d"
+      >
+        <strong>
+          Published State: 
+        </strong>
+        Rejected
+        <br />
+        <strong>
+          Number of responses: 
+        </strong>
+         
+        0
+      </CollapsePanel>
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              After-Edit
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=ba665a40-f58b-11e9-9b29-99ffbf733bb5"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="ba665a40-f58b-11e9-9b29-99ffbf733bb5"
+      >
+        <strong>
+          Published State: 
+        </strong>
+        Published
+        <br />
+        <strong>
+          Number of responses: 
+        </strong>
+         
+        0
+        <div>
+          <strong>
+            Number of Purchases: 
+          </strong>
+           
+          0
+          <br />
+          <strong>
+            Average Rating: 
+          </strong>
+          Currently no ratings
+          <br />
+          <br />
+          <Checkbox
+            checked={false}
+            indeterminate={false}
+            onChange={[Function]}
+          >
+            Receive Purchase Email Notifications
+          </Checkbox>
+        </div>
+      </CollapsePanel>
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              b
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=4fe4b2c0-f4a5-11e9-87b0-6785951dc893"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="4fe4b2c0-f4a5-11e9-87b0-6785951dc893"
+      >
+        <strong>
+          Published State: 
+        </strong>
+        Waiting Approval
+        <br />
+        <strong>
+          Number of responses: 
+        </strong>
+         
+        0
+        <div>
+          <br />
+          <Checkbox
+            checked={true}
+            indeterminate={false}
+            onChange={[Function]}
+          >
+            Receive Approval Email Notification
+          </Checkbox>
+        </div>
+      </CollapsePanel>
+    </Collapse>
+  </div>
+  <div
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <h1>
+      Available Forms
+    </h1>
+    <Collapse
+      accordion={true}
+      bordered={true}
+      expandIconPosition="left"
+      openAnimation={
+        Object {
+          "appear": [Function],
+          "enter": [Function],
+          "leave": [Function],
+        }
+      }
+    >
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              a
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=2d239420-f49d-11e9-8487-c5a7ea76fe8d"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="0"
+      >
+        <strong>
+          My Rating
+        </strong>
+        <br />
+        <Rate
+          allowHalf={true}
+          character={
+            <Icon
+              theme="filled"
+              type="star"
+            />
+          }
+          defaultValue={2.5}
+          onChange={[Function]}
+        />
+        <br />
+        <br />
+        <strong>
+          Number of my responses: 
+        </strong>
+         
+        0
+      </CollapsePanel>
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              a
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=b26304a0-f49c-11e9-8487-c5a7ea76fe8d"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="1"
+      >
+        <strong>
+          My Rating
+        </strong>
+        <br />
+        <Rate
+          allowHalf={true}
+          character={
+            <Icon
+              theme="filled"
+              type="star"
+            />
+          }
+          defaultValue={0}
+          onChange={[Function]}
+        />
+        <br />
+        <br />
+        <strong>
+          Number of my responses: 
+        </strong>
+         
+        0
+      </CollapsePanel>
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              After-Edit
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=ba665a40-f58b-11e9-9b29-99ffbf733bb5"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="2"
+      >
+        <strong>
+          My Rating
+        </strong>
+        <br />
+        <Rate
+          allowHalf={true}
+          character={
+            <Icon
+              theme="filled"
+              type="star"
+            />
+          }
+          defaultValue={0}
+          onChange={[Function]}
+        />
+        <br />
+        <br />
+        <strong>
+          Number of my responses: 
+        </strong>
+         
+        0
+      </CollapsePanel>
+      <CollapsePanel
+        header={
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "marginTop": 5,
+                }
+              }
+            >
+              b
+            </span>
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="Copy Link to Complete Form"
+                transitionName="zoom-big-fast"
+              >
+                <Icon
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#6fa6ed",
+                      "fontSize": 32,
+                      "marginRight": 10,
+                    }
+                  }
+                  type="import"
+                />
+              </Tooltip>
+              <Tooltip
+                arrowPointAtCenter={false}
+                autoAdjustOverflow={true}
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                placement="top"
+                title="View Results"
+                transitionName="zoom-big-fast"
+              >
+                <ForwardRef
+                  onClick={[Function]}
+                  to="/viewResults?surveyId=4fe4b2c0-f4a5-11e9-87b0-6785951dc893"
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "color": "#6fa6ed",
+                        "fontSize": 32,
+                      }
+                    }
+                    type="table"
+                  />
+                </ForwardRef>
+              </Tooltip>
+            </div>
+          </div>
+        }
+        key="3"
+      >
+        <strong>
+          My Rating
+        </strong>
+        <br />
+        <Rate
+          allowHalf={true}
+          character={
+            <Icon
+              theme="filled"
+              type="star"
+            />
+          }
+          defaultValue={0}
+          onChange={[Function]}
+        />
+        <br />
+        <br />
+        <strong>
+          Number of my responses: 
+        </strong>
+         
+        0
+      </CollapsePanel>
+    </Collapse>
+  </div>
+</div>
+`;
+
+exports[`MyForms should render the my forms page 2`] = `
+Object {
+  "deleteLoading": false,
+  "loading": false,
+  "ownedForms": Array [
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": 2.5,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 0,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 2,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "After-Edit-D",
+      "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+      "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+      "instructions": null,
+      "myRating": null,
+      "name": "After-Edit",
+      "numResponses": null,
+      "price": 2,
+      "publishedStatus": 3,
+      "receiveNotifications": 0,
+      "redirect": "",
+      "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+      "tags": Array [
+        Object {
+          "tag": "123",
+        },
+        Object {
+          "tag": "213",
+        },
+      ],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "b",
+      "form": "%7B%7D",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "b",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 1,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+  ],
+  "purchasedForms": Array [
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": 2.5,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 0,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 2,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "After-Edit-D",
+      "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+      "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+      "instructions": null,
+      "myRating": null,
+      "name": "After-Edit",
+      "numResponses": null,
+      "price": 2,
+      "publishedStatus": 3,
+      "receiveNotifications": 0,
+      "redirect": "",
+      "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+      "tags": Array [
+        Object {
+          "tag": "123",
+        },
+        Object {
+          "tag": "213",
+        },
+      ],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "b",
+      "form": "%7B%7D",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "b",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 1,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+  ],
+  "submitLoading": false,
+}
+`;

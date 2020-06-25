@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Complete Form should give error and redirect on invalid form 1`] = `
+Array [
+  "Invalid Form. Redirecting",
+]
+`;
+
+exports[`Complete Form should give error and redirect on invalid form 2`] = `"/"`;
+
+exports[`Complete Form should render complete form page 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "center",
+      "paddingTop": 200,
+      "width": "100%",
+    }
+  }
+>
+  <Icon
+    style={
+      Object {
+        "fontSize": 70,
+        "marginTop": 8,
+      }
+    }
+    type="loading"
+  />
+</div>
+`;
+
+exports[`Complete Form should render complete form page 2`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "calc(50% - 250px)",
+      "marginRight": "calc(50% - 250px)",
+      "marginTop": 10,
+    }
+  }
+>
+  <h1>
+    After-Edit
+  </h1>
+  null
+  <br />
+  <br />
+  <Form
+    colon={true}
+    hideRequiredMark={false}
+    layout="horizontal"
+    onSubmit={[Function]}
+  >
+    What is Your... ?
+    <FormComponent
+      form={
+        Object {
+          "validateFields": [MockFunction],
+        }
+      }
+      id="1"
+      question={
+        Object {
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "textInput",
+        }
+      }
+    />
+    What is Your... ?
+    <FormComponent
+      form={
+        Object {
+          "validateFields": [MockFunction],
+        }
+      }
+      id="2"
+      question={
+        Object {
+          "defaultValue": false,
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "switch",
+        }
+      }
+    />
+    <FormItem
+      hasFeedback={false}
+    >
+      <Button
+        block={false}
+        ghost={false}
+        htmlType="submit"
+        loading={false}
+        style={
+          Object {
+            "marginRight": 5,
+          }
+        }
+        type="primary"
+      >
+        Submit
+      </Button>
+    </FormItem>
+  </Form>
+</div>
+`;
+
+exports[`Complete Form should submit results of complete form and redirect 1`] = `
+Array [
+  "Saved Successfully",
+]
+`;
+
+exports[`Complete Form should submit results of complete form and redirect 2`] = `"/"`;
+
+exports[`Complete Form should submit results of complete form and redirect 3`] = `
+Array [
+  "prod-publicus-app-api",
+  "/results/ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+  Object {
+    "body": Object {
+      "creatorId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+      "results": Object {
+        "1": "VALUE_1",
+        "2": "VALUE_2",
+      },
+    },
+  },
+]
+`;

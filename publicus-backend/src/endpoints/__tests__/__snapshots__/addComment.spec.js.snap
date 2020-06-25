@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addComment should add a comment to the database 1`] = `
+"INSERT INTO Comments (surveyId, userId, comment ) 
+          VALUES ( 'MOCK_SURVEY_ID', 'MOCK_COGNITO_ID', 'MOCK_COMMENT' )"
+`;
+
+exports[`addComment should add a comment to the database 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`addComment should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

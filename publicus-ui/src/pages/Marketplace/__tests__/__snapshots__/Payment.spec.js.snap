@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment should render marketplace payment 1`] = `
+<div>
+  <br />
+  <h2
+    style={
+      Object {
+        "marginBottom": 12,
+      }
+    }
+  >
+    Card Details
+  </h2>
+  <CardElement
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onReady={[Function]}
+    style={
+      Object {
+        "base": Object {
+          "::placeholder": Object {
+            "color": "#aab7c4",
+          },
+          "color": "#424770",
+          "fontFamily": "Open Sans, sans-serif",
+          "fontSize": "16px",
+          "letterSpacing": "0.025em",
+        },
+        "invalid": Object {
+          "color": "#c23d4b",
+        },
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "color": "red",
+        "height": 20,
+        "marginTop": 4,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <Button
+      block={false}
+      ghost={false}
+      htmlType="button"
+      loading={false}
+      onClick={[Function]}
+      type="primary"
+    >
+      Purchase
+    </Button>
+  </div>
+</div>
+`;
+
+exports[`Payment should render purchase errors 1`] = `
+<div>
+  <br />
+  <h2
+    style={
+      Object {
+        "marginBottom": 12,
+      }
+    }
+  >
+    Card Details
+  </h2>
+  <CardElement
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onReady={[Function]}
+    style={
+      Object {
+        "base": Object {
+          "::placeholder": Object {
+            "color": "#aab7c4",
+          },
+          "color": "#424770",
+          "fontFamily": "Open Sans, sans-serif",
+          "fontSize": "16px",
+          "letterSpacing": "0.025em",
+        },
+        "invalid": Object {
+          "color": "#c23d4b",
+        },
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "color": "red",
+        "height": 20,
+        "marginTop": 4,
+      }
+    }
+  >
+    ERROR_MESSAGE
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <Button
+      block={false}
+      ghost={false}
+      htmlType="button"
+      loading={false}
+      onClick={[Function]}
+      type="primary"
+    >
+      Purchase
+    </Button>
+  </div>
+</div>
+`;
+
+exports[`Payment should render purchase errors 2`] = `
+<div>
+  <br />
+  <h2
+    style={
+      Object {
+        "marginBottom": 12,
+      }
+    }
+  >
+    Card Details
+  </h2>
+  <CardElement
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onReady={[Function]}
+    style={
+      Object {
+        "base": Object {
+          "::placeholder": Object {
+            "color": "#aab7c4",
+          },
+          "color": "#424770",
+          "fontFamily": "Open Sans, sans-serif",
+          "fontSize": "16px",
+          "letterSpacing": "0.025em",
+        },
+        "invalid": Object {
+          "color": "#c23d4b",
+        },
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "color": "red",
+        "height": 20,
+        "marginTop": 4,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <Button
+      block={false}
+      ghost={false}
+      htmlType="button"
+      loading={false}
+      onClick={[Function]}
+      type="primary"
+    >
+      Purchase
+    </Button>
+  </div>
+</div>
+`;

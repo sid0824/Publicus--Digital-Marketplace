@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should login 1`] = `
+Array [
+  "EMAIL",
+  "PASSWORD",
+]
+`;
+
+exports[`Login should render the login page 1`] = `
+<Form
+  colon={true}
+  hideRequiredMark={false}
+  layout="horizontal"
+  onSubmit={[Function]}
+  style={
+    Object {
+      "marginLeft": "15%",
+      "marginRight": "15%",
+      "marginTop": "70px",
+      "width": "70%",
+    }
+  }
+>
+  <h1>
+    Enter Your Details
+  </h1>
+  Email Address
+  <FormItem
+    hasFeedback={false}
+  >
+    <Input
+      placeholder="Username..."
+      type="text"
+    />
+  </FormItem>
+  Password
+  <FormItem
+    hasFeedback={false}
+  >
+    <Input
+      placeholder="Password..."
+      type="password"
+    />
+  </FormItem>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <FormItem
+      hasFeedback={false}
+    >
+      <Button
+        block={false}
+        ghost={false}
+        htmlType="submit"
+        loading={false}
+        type="primary"
+      >
+        Login
+      </Button>
+    </FormItem>
+    <Link
+      to="/createAccount"
+    >
+      <Button
+        block={false}
+        ghost={false}
+        htmlType="button"
+        loading={false}
+        style={
+          Object {
+            "marginLeft": 4,
+            "marginTop": 3,
+          }
+        }
+      >
+        Create Account
+      </Button>
+    </Link>
+  </div>
+</Form>
+`;

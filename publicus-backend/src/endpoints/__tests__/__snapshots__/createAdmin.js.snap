@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createAdmin should fail if current user isnt an admin 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 401,
+}
+`;
+
+exports[`createAdmin should fail if user doesnt exist 1`] = `"SELECT userId FROM Users WHERE email = 'undefined'"`;
+
+exports[`createAdmin should fail if user doesnt exist 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`createAdmin should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`createAdmin should turn a user into an admin 1`] = `"SELECT userId FROM Users WHERE email = 'undefined'"`;
+
+exports[`createAdmin should turn a user into an admin 2`] = `"UPDATE Users SET admin = 1 WHERE userId = 'MOCK_ID'"`;
+
+exports[`createAdmin should turn a user into an admin 3`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;

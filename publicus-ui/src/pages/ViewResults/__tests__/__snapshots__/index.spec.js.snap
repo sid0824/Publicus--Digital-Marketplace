@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewResults should download results as csv 1`] = `
+Array [
+  "\\"submissionTime\\",\\"r email\\",\\"What is Your... ?\\",\\"What time is the...?\\",\\"What date is the...?\\"
+\\"2019-10-24T02:45:29.000Z\\",\\"a@b.com\\",\\"2\\",\\"2019-10-24T02:46:09.000Z\\",
+\\"2019-10-24T02:46:25.000Z\\",\\"a@b.com\\",\\"2\\",\\"2019-10-24T02:46:09.000Z\\",",
+  "resultsData.csv",
+]
+`;
+
+exports[`ViewResults should render view results page 1`] = `
+<div
+  style={
+    Object {
+      "margin": 10,
+    }
+  }
+>
+  <h1>
+    Results
+  </h1>
+  <Button
+    block={false}
+    ghost={false}
+    htmlType="button"
+    loading={false}
+    onClick={[Function]}
+    type="primary"
+  >
+    Download Results
+  </Button>
+  <br />
+  <br />
+  <Collapse
+    accordion={true}
+    bordered={true}
+    expandIconPosition="left"
+    openAnimation={
+      Object {
+        "appear": [Function],
+        "enter": [Function],
+        "leave": [Function],
+      }
+    }
+  >
+    <CollapsePanel
+      header="Result Received at October 24th 2019, 12:45:29 pm"
+      key="0"
+    >
+      <p>
+        <span>
+          <strong>
+            r email
+            : 
+          </strong>
+           
+          a@b.com
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          1
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          false
+          <br />
+        </span>
+        <span>
+          <strong>
+            What time is the...?
+            : 
+          </strong>
+           
+          12:46:09 pm
+          <br />
+        </span>
+        <span>
+          <strong>
+            What date is the...?
+            : 
+          </strong>
+           
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          2
+          <br />
+        </span>
+      </p>
+    </CollapsePanel>
+    <CollapsePanel
+      header="Result Received at October 24th 2019, 12:46:25 pm"
+      key="1"
+    >
+      <p>
+        <span>
+          <strong>
+            r email
+            : 
+          </strong>
+           
+          a@b.com
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          1
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          true
+          <br />
+        </span>
+        <span>
+          <strong>
+            What time is the...?
+            : 
+          </strong>
+           
+          12:46:09 pm
+          <br />
+        </span>
+        <span>
+          <strong>
+            What date is the...?
+            : 
+          </strong>
+           
+          <br />
+        </span>
+        <span>
+          <strong>
+            What is Your... ?
+            : 
+          </strong>
+           
+          2
+          <br />
+        </span>
+      </p>
+    </CollapsePanel>
+  </Collapse>
+</div>
+`;
+
+exports[`ViewResults should render view results page 2`] = `
+Object {
+  "results": Array [
+    Object {
+      "data": Array [
+        Object {
+          "answer": "a@b.com",
+          "prompt": "r email",
+          "type": "textInput",
+        },
+        Object {
+          "answer": null,
+          "prompt": "What is Your... ?",
+          "type": "numberInput",
+        },
+        Object {
+          "answer": "1",
+          "prompt": "What is Your... ?",
+          "type": "select",
+        },
+        Object {
+          "answer": null,
+          "prompt": "What is Your... ?",
+          "type": "switch",
+        },
+        Object {
+          "answer": "2019-10-24T02:46:09.000Z",
+          "prompt": "What time is the...?",
+          "type": "timePicker",
+        },
+        Object {
+          "answer": null,
+          "prompt": "What date is the...?",
+          "type": "datePicker",
+        },
+        Object {
+          "answer": "2",
+          "prompt": "What is Your... ?",
+          "type": "radio",
+        },
+      ],
+      "submissionTime": "2019-10-24T02:45:29.000Z",
+    },
+    Object {
+      "data": Array [
+        Object {
+          "answer": "a@b.com",
+          "prompt": "r email",
+          "type": "textInput",
+        },
+        Object {
+          "answer": null,
+          "prompt": "What is Your... ?",
+          "type": "numberInput",
+        },
+        Object {
+          "answer": "1",
+          "prompt": "What is Your... ?",
+          "type": "select",
+        },
+        Object {
+          "answer": true,
+          "prompt": "What is Your... ?",
+          "type": "switch",
+        },
+        Object {
+          "answer": "2019-10-24T02:46:09.000Z",
+          "prompt": "What time is the...?",
+          "type": "timePicker",
+        },
+        Object {
+          "answer": null,
+          "prompt": "What date is the...?",
+          "type": "datePicker",
+        },
+        Object {
+          "answer": "2",
+          "prompt": "What is Your... ?",
+          "type": "radio",
+        },
+      ],
+      "submissionTime": "2019-10-24T02:46:25.000Z",
+    },
+  ],
+}
+`;

@@ -1,0 +1,29 @@
+{
+  "name": "publicus-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "aws-sdk": "^2.550.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "stripe": "^7.10.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "serverless": "^1.55.1",
+    "serverless-bundle": "^1.2.5",
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-offline": "^5.12.0"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "deploy": "sls deploy"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,61 @@
+{
+  "1": {
+    "type": "textInput",
+    "rules": [
+      "email",
+      "required"
+    ],
+    "prompt": "r email"
+  },
+  "2": {
+    "type": "numberInput",
+    "rules": [
+      "required"
+    ],
+    "prompt": "What is Your... ?",
+    "incrementor": 1,
+    "startingNumber": 0,
+    "min": 0,
+    "max": 100
+  },
+  "3": {
+    "type": "select",
+    "rules": [
+      "required"
+    ],
+    "prompt": "What is Your... ?",
+    "options": [
+      "1",
+      "2"
+    ]
+  },
+  "4": {
+    "type": "switch",
+    "rules": [],
+    "prompt": "What is Your... ?",
+    "defaultValue": false
+  },
+  "5": {
+    "type": "timePicker",
+    "rules": [
+      "required"
+    ],
+    "prompt": "What time is the...?"
+  },
+  "6": {
+    "type": "datePicker",
+    "rules": [],
+    "prompt": "What date is the...?",
+    "showTime": true
+  },
+  "7": {
+    "type": "radio",
+    "rules": [],
+    "prompt": "What is Your... ?",
+    "radioOptions": [
+      "1",
+      "2",
+      "3"
+    ]
+  }
+}

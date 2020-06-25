@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QueryUtil should get image s3 pre-signed url 1`] = `
+Array [
+  "putObject",
+  Object {
+    "ACL": "public-read",
+    "Bucket": "publicus-file-uploads",
+    "ContentType": "FILE_TYPE",
+    "Expires": 500,
+    "Key": "FILE_PATH",
+  },
+  [Function],
+]
+`;
+
+exports[`QueryUtil should return if a user owns a form 1`] = `
+Array [
+  "SELECT receiveNotifications
+          FROM Surveys
+          WHERE surveyId = 'SURVEY_ID'",
+]
+`;
+
+exports[`QueryUtil should return if admin 1`] = `
+Array [
+  "SELECT receiveNotifications
+          FROM Surveys
+          WHERE surveyId = 'SURVEY_ID'",
+]
+`;
+
+exports[`QueryUtil should return if owner 1`] = `
+Array [
+  "SELECT receiveNotifications
+          FROM Surveys
+          WHERE surveyId = 'SURVEY_ID'",
+]
+`;
+
+exports[`QueryUtil should return if owner or admin 1`] = `
+Array [
+  "SELECT receiveNotifications
+          FROM Surveys
+          WHERE surveyId = 'SURVEY_ID'",
+]
+`;
+
+exports[`QueryUtil should return if owner or admin 2`] = `
+Array [
+  "SELECT userId 
+          FROM Surveys 
+          WHERE surveyId = 'SURVEY_ID'",
+]
+`;
+
+exports[`QueryUtil should return receive notification setting 1`] = `undefined`;

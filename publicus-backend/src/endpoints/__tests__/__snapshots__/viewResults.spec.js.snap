@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`viewResults should fail if user has no access to form 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 401,
+}
+`;
+
+exports[`viewResults should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`viewResults should return results for a survey 1`] = `
+"SELECT * 
+          FROM Results 
+          WHERE surveyId = 'MOCK_SURVEY_ID' AND creatorId = 'MOCK_COGNITO_ID'"
+`;
+
+exports[`viewResults should return results for a survey 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;

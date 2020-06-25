@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailUtil should send a purchased email 1`] = `
+Object {
+  "Destination": Object {
+    "ToAddresses": Array [
+      "www.mockEmail.com",
+    ],
+  },
+  "Message": Object {
+    "Body": Object {
+      "Text": Object {
+        "Charset": "UTF-8",
+        "Data": "One of your forms was purchased on the Publicus Marketplace. View in the site.
+http://publicus-ui.s3-website-ap-southeast-2.amazonaws.com/myForms",
+      },
+    },
+    "Subject": Object {
+      "Charset": "UTF-8",
+      "Data": "A User Purchased Your Form",
+    },
+  },
+  "Source": "publicusnoreply@gmail.com",
+}
+`;
+
+exports[`EmailUtil should send an approval email 1`] = `
+Object {
+  "Destination": Object {
+    "ToAddresses": Array [
+      "www.mockEmail.com",
+    ],
+  },
+  "Message": Object {
+    "Body": Object {
+      "Text": Object {
+        "Charset": "UTF-8",
+        "Data": "Your form 'NAME' was approved for the Publicus Marketplace by an administrator.
+It can now be purchased any used by other users.
+http://publicus-ui.s3-website-ap-southeast-2.amazonaws.com/marketplace?search=USER_ID",
+      },
+    },
+    "Subject": Object {
+      "Charset": "UTF-8",
+      "Data": "Your Form was Approved For the Marketplace!",
+    },
+  },
+  "Source": "publicusnoreply@gmail.com",
+}
+`;

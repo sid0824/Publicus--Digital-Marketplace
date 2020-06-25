@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`editSurvey should edit an existing survey 1`] = `
+"UPDATE Surveys 
+          SET name = 'NAME', price = 5, form = '%5B%7B%22MOCK%22%3A%22FORM%22%7D%5D', 
+           description = 'DESCRIPTION', redirect = 'REDIRECT', instructions = 'INSTRUCTIONS'
+          WHERE surveyId = 'SURVEY_ID'"
+`;
+
+exports[`editSurvey should edit an existing survey 2`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`editSurvey should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

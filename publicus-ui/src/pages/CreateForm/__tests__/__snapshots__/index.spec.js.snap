@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Form should generate initial configs for all input types 1`] = `
+Object {
+  "1": Object {
+    "prompt": "What is Your... ?",
+    "rules": Array [],
+    "type": "textInput",
+  },
+  "2": Object {
+    "options": Array [],
+    "prompt": "What is Your... ?",
+    "rules": Array [],
+    "type": "select",
+  },
+  "3": Object {
+    "incrementor": 1,
+    "max": 100,
+    "min": 0,
+    "prompt": "What is Your... ?",
+    "rules": Array [],
+    "startingNumber": 0,
+    "type": "numberInput",
+  },
+  "4": Object {
+    "prompt": "What time is the...?",
+    "rules": Array [],
+    "type": "timePicker",
+  },
+  "5": Object {
+    "prompt": "What date is the...?",
+    "rules": Array [],
+    "showTime": false,
+    "type": "datePicker",
+  },
+  "6": Object {
+    "prompt": "What is Your... ?",
+    "radioOptions": Array [
+      "Placeholder",
+    ],
+    "rules": Array [],
+    "type": "radio",
+  },
+  "7": Object {
+    "defaultValue": false,
+    "prompt": "What is Your... ?",
+    "rules": Array [],
+    "type": "switch",
+  },
+}
+`;
+
+exports[`Create Form should render the create form page 1`] = `
+<Form
+  colon={true}
+  hideRequiredMark={false}
+  layout="horizontal"
+  onSubmit={[Function]}
+  style={
+    Object {
+      "marginLeft": "calc(50% - 250px)",
+      "marginRight": "calc(50% - 250px)",
+      "marginTop": 10,
+    }
+  }
+>
+  <h1>
+    Form Details
+  </h1>
+  Form Name
+  <FormItem
+    hasFeedback={false}
+  >
+    <Input
+      placeholder="Enter the form name"
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+      type="text"
+    />
+  </FormItem>
+  Form Description
+  <FormItem
+    hasFeedback={false}
+  >
+    <TextArea
+      placeholder="Enter the form description"
+      rows={3}
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+    />
+  </FormItem>
+  Form Price ($)
+  <FormItem
+    hasFeedback={false}
+  >
+    <InputNumber
+      max={500}
+      min={0}
+      step={1}
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+    />
+  </FormItem>
+  Form Tags
+  <FormItem
+    hasFeedback={false}
+  >
+    <Select
+      choiceTransitionName="zoom"
+      dropdownRender={[Function]}
+      mode="multiple"
+      onChange={[Function]}
+      onSearch={[Function]}
+      placeholder="Add tags to the form"
+      showSearch={false}
+      size="default"
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+      transitionName="slide-up"
+    />
+  </FormItem>
+  Redirect URL (Optional)
+  <FormItem
+    hasFeedback={false}
+  >
+    <Input
+      placeholder="Enter a url to redirect on form complete"
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+      type="text"
+    />
+  </FormItem>
+  User Instructions (Optional)
+  <FormItem
+    hasFeedback={false}
+  >
+    <TextArea
+      placeholder="Enter instructions for users at the top of the form"
+      rows={3}
+      style={
+        Object {
+          "width": 500,
+        }
+      }
+    />
+  </FormItem>
+  <br />
+  <Form(CreateFormFields)
+    changeConfig={[Function]}
+    config={
+      Object {
+        "1": Object {
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "textInput",
+        },
+        "2": Object {
+          "defaultValue": false,
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "switch",
+        },
+      }
+    }
+  />
+  <br />
+  <br />
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <FormItem
+      hasFeedback={false}
+    >
+      <Button
+        block={false}
+        ghost={false}
+        htmlType="submit"
+        loading={false}
+        style={
+          Object {
+            "marginRight": 5,
+          }
+        }
+        type="primary"
+      >
+        Save
+      </Button>
+    </FormItem>
+    <Dropdown
+      mouseEnterDelay={0.15}
+      mouseLeaveDelay={0.1}
+      overlay={
+        <Menu
+          onClick={[Function]}
+        >
+          <MenuItem>
+            Text Input
+          </MenuItem>
+          <MenuItem>
+            Number Input
+          </MenuItem>
+          <MenuItem>
+            Select
+          </MenuItem>
+          <MenuItem>
+            Switch
+          </MenuItem>
+          <MenuItem>
+            Time Picker
+          </MenuItem>
+          <MenuItem>
+            Date Picker
+          </MenuItem>
+          <MenuItem>
+            Radio Button
+          </MenuItem>
+        </Menu>
+      }
+      placement="bottomLeft"
+      trigger={
+        Array [
+          "click",
+        ]
+      }
+    >
+      <Button
+        block={false}
+        ghost={false}
+        htmlType="button"
+        loading={false}
+        style={
+          Object {
+            "marginTop": 4,
+          }
+        }
+      >
+        Create New Field 
+        <Icon
+          type="down"
+        />
+      </Button>
+    </Dropdown>
+  </div>
+  <br />
+  <br />
+  <br />
+</Form>
+`;
+
+exports[`Create Form should save new form 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/survey",
+  Object {
+    "body": Object {
+      "MOCK": "VALUE",
+      "form": Object {},
+    },
+  },
+]
+`;
+
+exports[`Create Form should update current form 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/survey/4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+  Object {
+    "body": Object {
+      "MOCK": "VALUE",
+      "form": Object {
+        "1": Object {
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "textInput",
+        },
+        "2": Object {
+          "defaultValue": false,
+          "prompt": "What is Your... ?",
+          "rules": Array [
+            "required",
+          ],
+          "type": "switch",
+        },
+      },
+      "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+    },
+  },
+]
+`;

@@ -1,0 +1,18 @@
+.root {
+  flex-grow: 1;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+Link {
+  text-decoration: none;
+  color: white;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}

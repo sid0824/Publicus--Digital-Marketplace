@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`search should return forms with search from the database 1`] = `
+"SELECT s.*, u.avatar, u.firstname, u.lastname, COUNT(c.commentId) AS 'numComments', AVG(r.rating) AS 'avgRating' 
+           FROM Surveys s 
+           LEFT JOIN Comments c ON s.surveyId = c.surveyId 
+           LEFT JOIN Users u ON u.userId = s.userId 
+           LEFT JOIN Ratings r ON s.surveyId = r.surveyId 
+           WHERE s.publishedStatus = 3 AND ( 
+              s.name = 'SEARCH' OR s.userId = 'SEARCH' OR s.surveyId IN (
+                SELECT surveyId
+                FROM Tags
+                WHERE tag = 'SEARCH'
+              )
+           ) GROUP BY s.surveyId 
+           LIMIT 10 OFFSET 10"
+`;
+
+exports[`search should return forms with search from the database 2`] = `
+"SELECT tag 
+          FROM Tags
+          WHERE surveyId = 'SURVEY_ID'"
+`;
+
+exports[`search should return forms with search from the database 3`] = `
+Object {
+  "body": "[{\\"surveyId\\":\\"SURVEY_ID\\",\\"tags\\":[{\\"tag\\":\\"TAG\\"}]}]",
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`search should return forms without search from the database 1`] = `
+"SELECT s.*, u.avatar, u.firstname, u.lastname, COUNT(c.commentId) AS 'numComments', AVG(r.rating) AS 'avgRating' 
+         FROM Surveys s 
+         LEFT JOIN Comments c ON s.surveyId = c.surveyId 
+         LEFT JOIN Users u ON u.userId = s.userId 
+         LEFT JOIN Ratings r ON s.surveyId = r.surveyId 
+         WHERE s.publishedStatus = 3
+         GROUP BY s.surveyId 
+         LIMIT 10 OFFSET 10"
+`;
+
+exports[`search should return forms without search from the database 2`] = `
+"SELECT tag 
+          FROM Tags
+          WHERE surveyId = 'SURVEY_ID'"
+`;
+
+exports[`search should return forms without search from the database 3`] = `
+Object {
+  "body": "[{\\"surveyId\\":\\"SURVEY_ID\\",\\"tags\\":[{\\"tag\\":\\"TAG\\"}]}]",
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;

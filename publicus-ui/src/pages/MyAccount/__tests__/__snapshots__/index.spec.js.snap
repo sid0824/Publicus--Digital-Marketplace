@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyAccount should render my account page 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "calc(50% - 300px)",
+      "marginRight": "calc(50% - 300px)",
+      "marginTop": 10,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "marginRight": 50,
+          }
+        }
+      >
+        User Avatar
+      </h2>
+      <div
+        style={
+          Object {
+            "height": 200,
+            "marginBottom": 12,
+            "width": 200,
+          }
+        }
+      >
+        <Component
+          height={200}
+          width={200}
+        />
+      </div>
+      <input
+        onChange={[Function]}
+        type="file"
+      />
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <h2>
+    Change Password
+  </h2>
+  Current Password
+  <br />
+  <Password
+    action="click"
+    inputPrefixCls="ant-input"
+    onChange={[Function]}
+    placeholder="Enter your current password"
+    prefixCls="ant-input-password"
+    style={
+      Object {
+        "width": 600,
+      }
+    }
+    value=""
+    visibilityToggle={true}
+  />
+  <br />
+  <br />
+  New Password
+  <br />
+  <Password
+    action="click"
+    inputPrefixCls="ant-input"
+    onChange={[Function]}
+    placeholder="Enter your new password"
+    prefixCls="ant-input-password"
+    style={
+      Object {
+        "width": 600,
+      }
+    }
+    value=""
+    visibilityToggle={true}
+  />
+  <br />
+  <br />
+  <Button
+    block={false}
+    ghost={false}
+    htmlType="button"
+    loading={false}
+    onClick={[Function]}
+    type="primary"
+  >
+    Submit
+  </Button>
+</div>
+`;
+
+exports[`MyAccount should update account password 1`] = `
+Array [
+  null,
+  "PASSWORD",
+  "PASSWORD",
+]
+`;

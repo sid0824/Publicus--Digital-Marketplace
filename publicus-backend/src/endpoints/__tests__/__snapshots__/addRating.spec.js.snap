@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addRating should add a new rating for a users survey 1`] = `
+"SELECT * FROM Ratings 
+          WHERE userId = 'MOCK_COGNITO_ID' AND surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`addRating should add a new rating for a users survey 2`] = `
+"SELECT * FROM Ratings 
+          WHERE userId = 'MOCK_COGNITO_ID' AND surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`addRating should add a new rating for a users survey 3`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`addRating should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`addRating should update a users rating for a survey 1`] = `
+"SELECT * FROM Ratings 
+          WHERE userId = 'MOCK_COGNITO_ID' AND surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`addRating should update a users rating for a survey 2`] = `
+"SELECT * FROM Ratings 
+          WHERE userId = 'MOCK_COGNITO_ID' AND surveyId = 'MOCK_SURVEY_ID'"
+`;
+
+exports[`addRating should update a users rating for a survey 3`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;

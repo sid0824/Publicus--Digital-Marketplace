@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`viewOwnedSurveys should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;
+
+exports[`viewOwnedSurveys should return all owned surveys 1`] = `"SELECT s.*, (SELECT COUNT(*) FROM Results p WHERE p.surveyId = s.surveyId AND p.creatorId = 'MOCK_COGNITO_ID' GROUP BY p.surveyId) as 'numResponses', (SELECT COUNT(*) FROM Licenses l WHERE l.surveyId = s.surveyId) as 'numPurchases', AVG(r.rating) AS 'avgRating' FROM Surveys s LEFT JOIN Ratings r ON s.surveyId = r.surveyId WHERE s.userId = 'MOCK_COGNITO_ID' GROUP BY s.surveyId"`;
+
+exports[`viewOwnedSurveys should return all owned surveys 2`] = `
+Object {
+  "body": "[{\\"MOCK\\":\\"FORM\\"}]",
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "applications/json",
+  },
+  "statusCode": 200,
+}
+`;

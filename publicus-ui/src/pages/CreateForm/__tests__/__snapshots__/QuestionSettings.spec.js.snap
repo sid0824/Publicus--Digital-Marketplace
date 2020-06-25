@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionSettings should change and add an option in radio button settings 1`] = `
+Array [
+  1,
+  "radioOptions",
+  "NEW_OPTION",
+]
+`;
+
+exports[`QuestionSettings should change the required boolean for a form question 1`] = `
+Array [
+  1,
+  "rules",
+  Array [
+    "email",
+    "required",
+    "required",
+  ],
+]
+`;
+
+exports[`QuestionSettings should change the required boolean for a form question 2`] = `
+Array [
+  1,
+  "rules",
+  Array [
+    "email",
+  ],
+]
+`;
+
+exports[`QuestionSettings should change the required boolean for a form question 3`] = `
+Array [
+  1,
+  "rules",
+  Array [
+    "required",
+    "url",
+  ],
+]
+`;
+
+exports[`QuestionSettings should render date picker question settings 1`] = `
+<div>
+  <Checkbox
+    checked={false}
+    indeterminate={false}
+    onChange={[Function]}
+  >
+    <strong>
+      Required Field
+    </strong>
+  </Checkbox>
+  <br />
+  <br />
+  <strong>
+    Prompt
+  </strong>
+  <Input
+    onChange={[Function]}
+    type="text"
+    value="What date is the...?"
+  />
+  <br />
+  <br />
+  <Checkbox
+    checked={true}
+    indeterminate={false}
+    onChange={[Function]}
+    style={
+      Object {
+        "width": 200,
+      }
+    }
+  >
+    <strong>
+      Show Time
+    </strong>
+  </Checkbox>
+</div>
+`;
+
+exports[`QuestionSettings should render number input question settings 1`] = `
+<div>
+  <Checkbox
+    checked={true}
+    indeterminate={false}
+    onChange={[Function]}
+  >
+    <strong>
+      Required Field
+    </strong>
+  </Checkbox>
+  <br />
+  <br />
+  <strong>
+    Prompt
+  </strong>
+  <Input
+    onChange={[Function]}
+    type="text"
+    value="What is Your... ?"
+  />
+  <br />
+  <br />
+  <strong>
+    Starting Number
+  </strong>
+  <br />
+  <InputNumber
+    max={100}
+    min={0}
+    onChange={[Function]}
+    step={1}
+    style={
+      Object {
+        "width": 223,
+      }
+    }
+    value={0}
+  />
+  <br />
+  <br />
+  <strong>
+    Minimum Value
+  </strong>
+  <br />
+  <InputNumber
+    onChange={[Function]}
+    step={1}
+    style={
+      Object {
+        "width": 223,
+      }
+    }
+    value={0}
+  />
+  <br />
+  <br />
+  <strong>
+    Maximum Value
+  </strong>
+  <br />
+  <InputNumber
+    onChange={[Function]}
+    step={1}
+    style={
+      Object {
+        "width": 223,
+      }
+    }
+    value={100}
+  />
+</div>
+`;
+
+exports[`QuestionSettings should render radio question settings 1`] = `
+<div>
+  <strong>
+    Prompt
+  </strong>
+  <Input
+    onChange={[Function]}
+    type="text"
+    value="What is Your... ?"
+  />
+  <br />
+  <br />
+  <strong>
+    Options
+  </strong>
+  <br />
+  <Select
+    choiceTransitionName="zoom"
+    dropdownRender={[Function]}
+    mode="multiple"
+    onChange={[Function]}
+    onSearch={[Function]}
+    placeholder="Add radio button options"
+    showSearch={false}
+    size="default"
+    style={
+      Object {
+        "width": 200,
+      }
+    }
+    transitionName="slide-up"
+    value={
+      Array [
+        "1",
+        "2",
+        "3",
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`QuestionSettings should render select question settings 1`] = `
+<div>
+  <Checkbox
+    checked={true}
+    indeterminate={false}
+    onChange={[Function]}
+  >
+    <strong>
+      Required Field
+    </strong>
+  </Checkbox>
+  <br />
+  <br />
+  <strong>
+    Prompt
+  </strong>
+  <Input
+    onChange={[Function]}
+    type="text"
+    value="What is Your... ?"
+  />
+  <br />
+  <br />
+  <strong>
+    Possible Values 
+    <span
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+    >
+      *
+    </span>
+  </strong>
+  <Component
+    id={3}
+  />
+</div>
+`;
+
+exports[`QuestionSettings should render switch question settings 1`] = `
+<div>
+  <strong>
+    Prompt
+  </strong>
+  <Input
+    onChange={[Function]}
+    type="text"
+    value="What is Your... ?"
+  />
+  <br />
+  <br />
+</div>
+`;
+
+exports[`QuestionSettings should render text input question settings 1`] = `
+<div>
+  <Checkbox
+    checked={true}
+    indeterminate={false}
+    onChange={[Function]}
+  >
+    <strong>
+      Required Field
+    </strong>
+  </Checkbox>
+  <br />
+  <br />
+  <strong>
+    Prompt
+  </strong>
+  <Input
+    onChange={[Function]}
+    type="text"
+    value="r email"
+  />
+  <br />
+  <br />
+  <strong>
+    Input Type
+  </strong>
+  <br />
+  <Checkbox
+    checked={true}
+    indeterminate={false}
+    onChange={[Function]}
+    style={
+      Object {
+        "width": 100,
+      }
+    }
+  >
+    Email
+  </Checkbox>
+  <Checkbox
+    checked={false}
+    indeterminate={false}
+    onChange={[Function]}
+    style={
+      Object {
+        "width": 100,
+      }
+    }
+  >
+    Number
+  </Checkbox>
+  <br />
+  <Checkbox
+    checked={false}
+    indeterminate={false}
+    onChange={[Function]}
+    style={
+      Object {
+        "width": 100,
+      }
+    }
+  >
+    Url
+  </Checkbox>
+  <br />
+</div>
+`;
+
+exports[`QuestionSettings should render time picker question settings 1`] = `
+<div>
+  <Checkbox
+    checked={true}
+    indeterminate={false}
+    onChange={[Function]}
+  >
+    <strong>
+      Required Field
+    </strong>
+  </Checkbox>
+  <br />
+  <br />
+  <strong>
+    Prompt
+  </strong>
+  <Input
+    onChange={[Function]}
+    type="text"
+    value="What time is the...?"
+  />
+  <br />
+  <br />
+</div>
+`;

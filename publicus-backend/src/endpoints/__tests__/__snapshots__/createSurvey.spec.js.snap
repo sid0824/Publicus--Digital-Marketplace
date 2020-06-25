@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createSurvey should add the survey to the database 1`] = `
+"INSERT INTO Surveys (surveyId, userId, name, price, form, description, redirect, image, instructions) 
+          VALUES( '575ea33e-f654-11e9-802a-5aa538984bd8', 'MOCK_COGNITO_ID', 'NAME', 5, '%5B%7B%22MOCK%22%3A%22FORM%22%7D%5D', 'DESCRIPTION', 
+          'REDIRECT', 'https://designshack.net/wp-content/uploads/placeholder-image.png', 'INSTRUCTIONS' )"
+`;
+
+exports[`createSurvey should add the survey to the database 2`] = `"INSERT INTO Tags(surveyId, tag) VALUES ( '575ea33e-f654-11e9-802a-5aa538984bd8', 'TAG1'),( '575ea33e-f654-11e9-802a-5aa538984bd8', 'TAG2');"`;
+
+exports[`createSurvey should add the survey to the database 3`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 200,
+}
+`;
+
+exports[`createSurvey should respond with failure when an error occurs 1`] = `
+Object {
+  "body": undefined,
+  "headers": Object {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+  },
+  "statusCode": 500,
+}
+`;

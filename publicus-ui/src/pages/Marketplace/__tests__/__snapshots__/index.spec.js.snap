@@ -1,0 +1,845 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Marketplace should checkout the cart and purchase forms 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/survey/purchase",
+  Object {
+    "body": Object {
+      "cart": Array [
+        "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+      ],
+      "tokenId": "TOKEN_ID",
+    },
+  },
+]
+`;
+
+exports[`Marketplace should give error on search failure 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "marginLeft": 100,
+      "marginRight": 100,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "height": "40px",
+      }
+    }
+  >
+    <Search
+      enterButton="Search"
+      onChange={[Function]}
+      onSearch={[Function]}
+      placeholder="Enter a term to search on..."
+      size="large"
+      value="medical"
+    />
+    <Tooltip
+      arrowPointAtCenter={false}
+      autoAdjustOverflow={true}
+      mouseEnterDelay={0.1}
+      mouseLeaveDelay={0.1}
+      placement="top"
+      title="View Cart"
+      transitionName="zoom-big-fast"
+    >
+      <Badge
+        count={0}
+        dot={false}
+        overflowCount={99}
+        showZero={false}
+      >
+        <div
+          style={
+            Object {
+              "color": "#3c97ff",
+              "fontSize": 35,
+              "marginLeft": 10,
+              "marginRight": 5,
+              "marginTop": 2,
+            }
+          }
+        >
+          <Icon
+            onClick={[Function]}
+            type="shopping-cart"
+          />
+        </div>
+      </Badge>
+    </Tooltip>
+    <Tooltip
+      arrowPointAtCenter={false}
+      autoAdjustOverflow={true}
+      mouseEnterDelay={0.1}
+      mouseLeaveDelay={0.1}
+      placement="top"
+      title="Clear Cart"
+      transitionName="zoom-big-fast"
+    >
+      <Icon
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "grey",
+            "fontSize": 32,
+            "marginLeft": 10,
+            "marginRight": 5,
+            "marginTop": 5,
+          }
+        }
+        type="rest"
+      />
+    </Tooltip>
+  </div>
+  <div
+    style={
+      Object {
+        "border": "2px solid #858f9c",
+        "height": "calc(100% - 60px)",
+        "marginTop": 12,
+        "overflowY": "scroll",
+        "paddingLeft": 12,
+        "paddingRight": 10,
+      }
+    }
+  >
+    <List
+      bordered={false}
+      dataSource={
+        Array [
+          Object {
+            "description": "a",
+            "form": "{}",
+            "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+            "instructions": null,
+            "myRating": 2.5,
+            "name": "a",
+            "numResponses": null,
+            "price": 1,
+            "publishedStatus": 0,
+            "receiveNotifications": 1,
+            "redirect": "",
+            "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+            "tags": Array [],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+          Object {
+            "description": "a",
+            "form": "{}",
+            "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+            "instructions": null,
+            "myRating": null,
+            "name": "a",
+            "numResponses": null,
+            "price": 1,
+            "publishedStatus": 2,
+            "receiveNotifications": 1,
+            "redirect": "",
+            "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+            "tags": Array [],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+          Object {
+            "description": "After-Edit-D",
+            "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+            "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+            "instructions": null,
+            "myRating": null,
+            "name": "After-Edit",
+            "numResponses": null,
+            "price": 2,
+            "publishedStatus": 3,
+            "receiveNotifications": 0,
+            "redirect": "",
+            "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+            "tags": Array [
+              Object {
+                "tag": "123",
+              },
+              Object {
+                "tag": "213",
+              },
+            ],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+          Object {
+            "description": "b",
+            "form": "%7B%7D",
+            "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+            "instructions": null,
+            "myRating": null,
+            "name": "b",
+            "numResponses": null,
+            "price": 1,
+            "publishedStatus": 1,
+            "receiveNotifications": 1,
+            "redirect": "",
+            "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+            "tags": Array [],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+        ]
+      }
+      itemLayout="vertical"
+      loadMore={
+        <div
+          style={
+            Object {
+              "height": 32,
+              "lineHeight": "32px",
+              "marginBottom": 20,
+              "marginTop": 12,
+              "textAlign": "center",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "fontSize": 20,
+              }
+            }
+          >
+            No More Results
+          </span>
+        </div>
+      }
+      loading={false}
+      pagination={false}
+      renderItem={[Function]}
+      size="large"
+      split={true}
+    />
+  </div>
+  <withConfigConsumer(Drawer)
+    onClose={[Function]}
+    title="Your Cart"
+    visible={false}
+    width={500}
+  >
+    Add a form to your cart in order to be able to purchase it
+  </withConfigConsumer(Drawer)>
+  <withConfigConsumer(Drawer)
+    onClose={[Function]}
+    title={null}
+    visible={false}
+    width={800}
+  />
+</div>
+`;
+
+exports[`Marketplace should give error on search failure 2`] = `
+Object {
+  "cart": Array [],
+  "cartVisible": false,
+  "commentValue": "",
+  "comments": null,
+  "currentPage": 1,
+  "formVisible": false,
+  "forms": Array [
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": 2.5,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 0,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 2,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "After-Edit-D",
+      "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+      "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+      "instructions": null,
+      "myRating": null,
+      "name": "After-Edit",
+      "numResponses": null,
+      "price": 2,
+      "publishedStatus": 3,
+      "receiveNotifications": 0,
+      "redirect": "",
+      "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+      "tags": Array [
+        Object {
+          "tag": "123",
+        },
+        Object {
+          "tag": "213",
+        },
+      ],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "b",
+      "form": "%7B%7D",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "b",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 1,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+  ],
+  "loadMore": false,
+  "loading": false,
+  "paymentVisible": false,
+  "search": "medical",
+  "selectedForm": null,
+}
+`;
+
+exports[`Marketplace should handle submitting of new comments 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/survey/2d239420-f49d-11e9-8487-c5a7ea76fe8d/comment",
+  Object {
+    "body": Object {
+      "comment": "NEW_COMMENT",
+    },
+  },
+]
+`;
+
+exports[`Marketplace should handle submitting of new comments 2`] = `
+Array [
+  "prod-publicus-app-api",
+  "/survey/2d239420-f49d-11e9-8487-c5a7ea76fe8d/comment",
+  Object {},
+]
+`;
+
+exports[`Marketplace should handle submitting of new comments 3`] = `
+Object {
+  "cart": Array [],
+  "cartVisible": false,
+  "commentValue": "",
+  "comments": Array [
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": 2.5,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 0,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 2,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "After-Edit-D",
+      "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+      "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+      "instructions": null,
+      "myRating": null,
+      "name": "After-Edit",
+      "numResponses": null,
+      "price": 2,
+      "publishedStatus": 3,
+      "receiveNotifications": 0,
+      "redirect": "",
+      "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+      "tags": Array [
+        Object {
+          "tag": "123",
+        },
+        Object {
+          "tag": "213",
+        },
+      ],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "b",
+      "form": "%7B%7D",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "b",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 1,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+  ],
+  "currentPage": 1,
+  "formVisible": true,
+  "forms": Array [
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": 2.5,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 0,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 2,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "After-Edit-D",
+      "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+      "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+      "instructions": null,
+      "myRating": null,
+      "name": "After-Edit",
+      "numResponses": null,
+      "price": 2,
+      "publishedStatus": 3,
+      "receiveNotifications": 0,
+      "redirect": "",
+      "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+      "tags": Array [
+        Object {
+          "tag": "123",
+        },
+        Object {
+          "tag": "213",
+        },
+      ],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "b",
+      "form": "%7B%7D",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "b",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 1,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+  ],
+  "loadMore": false,
+  "loading": false,
+  "paymentVisible": false,
+  "search": "medical",
+  "selectedForm": Object {
+    "description": "a",
+    "form": "{}",
+    "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+    "instructions": null,
+    "myRating": 2.5,
+    "name": "a",
+    "numResponses": null,
+    "price": 1,
+    "publishedStatus": 0,
+    "receiveNotifications": 1,
+    "redirect": "",
+    "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+    "tags": Array [],
+    "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+  },
+}
+`;
+
+exports[`Marketplace should remove form from marketplace 1`] = `
+Array [
+  "prod-publicus-app-api",
+  "/modifySurveyStatus",
+  Object {
+    "body": Object {
+      "status": 2,
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+    },
+  },
+]
+`;
+
+exports[`Marketplace should render marketplace with filtered forms 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "marginLeft": 100,
+      "marginRight": 100,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "height": "40px",
+      }
+    }
+  >
+    <Search
+      enterButton="Search"
+      onChange={[Function]}
+      onSearch={[Function]}
+      placeholder="Enter a term to search on..."
+      size="large"
+      value="medical"
+    />
+    <Tooltip
+      arrowPointAtCenter={false}
+      autoAdjustOverflow={true}
+      mouseEnterDelay={0.1}
+      mouseLeaveDelay={0.1}
+      placement="top"
+      title="View Cart"
+      transitionName="zoom-big-fast"
+    >
+      <Badge
+        count={0}
+        dot={false}
+        overflowCount={99}
+        showZero={false}
+      >
+        <div
+          style={
+            Object {
+              "color": "#3c97ff",
+              "fontSize": 35,
+              "marginLeft": 10,
+              "marginRight": 5,
+              "marginTop": 2,
+            }
+          }
+        >
+          <Icon
+            onClick={[Function]}
+            type="shopping-cart"
+          />
+        </div>
+      </Badge>
+    </Tooltip>
+    <Tooltip
+      arrowPointAtCenter={false}
+      autoAdjustOverflow={true}
+      mouseEnterDelay={0.1}
+      mouseLeaveDelay={0.1}
+      placement="top"
+      title="Clear Cart"
+      transitionName="zoom-big-fast"
+    >
+      <Icon
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "grey",
+            "fontSize": 32,
+            "marginLeft": 10,
+            "marginRight": 5,
+            "marginTop": 5,
+          }
+        }
+        type="rest"
+      />
+    </Tooltip>
+  </div>
+  <div
+    style={
+      Object {
+        "border": "2px solid #858f9c",
+        "height": "calc(100% - 60px)",
+        "marginTop": 12,
+        "overflowY": "scroll",
+        "paddingLeft": 12,
+        "paddingRight": 10,
+      }
+    }
+  >
+    <List
+      bordered={false}
+      dataSource={
+        Array [
+          Object {
+            "description": "a",
+            "form": "{}",
+            "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+            "instructions": null,
+            "myRating": 2.5,
+            "name": "a",
+            "numResponses": null,
+            "price": 1,
+            "publishedStatus": 0,
+            "receiveNotifications": 1,
+            "redirect": "",
+            "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+            "tags": Array [],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+          Object {
+            "description": "a",
+            "form": "{}",
+            "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+            "instructions": null,
+            "myRating": null,
+            "name": "a",
+            "numResponses": null,
+            "price": 1,
+            "publishedStatus": 2,
+            "receiveNotifications": 1,
+            "redirect": "",
+            "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+            "tags": Array [],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+          Object {
+            "description": "After-Edit-D",
+            "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+            "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+            "instructions": null,
+            "myRating": null,
+            "name": "After-Edit",
+            "numResponses": null,
+            "price": 2,
+            "publishedStatus": 3,
+            "receiveNotifications": 0,
+            "redirect": "",
+            "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+            "tags": Array [
+              Object {
+                "tag": "123",
+              },
+              Object {
+                "tag": "213",
+              },
+            ],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+          Object {
+            "description": "b",
+            "form": "%7B%7D",
+            "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+            "instructions": null,
+            "myRating": null,
+            "name": "b",
+            "numResponses": null,
+            "price": 1,
+            "publishedStatus": 1,
+            "receiveNotifications": 1,
+            "redirect": "",
+            "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+            "tags": Array [],
+            "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+          },
+        ]
+      }
+      itemLayout="vertical"
+      loadMore={
+        <div
+          style={
+            Object {
+              "height": 32,
+              "lineHeight": "32px",
+              "marginBottom": 20,
+              "marginTop": 12,
+              "textAlign": "center",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "fontSize": 20,
+              }
+            }
+          >
+            No More Results
+          </span>
+        </div>
+      }
+      loading={false}
+      pagination={false}
+      renderItem={[Function]}
+      size="large"
+      split={true}
+    />
+  </div>
+  <withConfigConsumer(Drawer)
+    onClose={[Function]}
+    title="Your Cart"
+    visible={false}
+    width={500}
+  >
+    Add a form to your cart in order to be able to purchase it
+  </withConfigConsumer(Drawer)>
+  <withConfigConsumer(Drawer)
+    onClose={[Function]}
+    title={null}
+    visible={false}
+    width={800}
+  />
+</div>
+`;
+
+exports[`Marketplace should render marketplace with filtered forms 2`] = `
+Object {
+  "cart": Array [],
+  "cartVisible": false,
+  "commentValue": "",
+  "comments": null,
+  "currentPage": 1,
+  "formVisible": false,
+  "forms": Array [
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": 2.5,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 0,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "2d239420-f49d-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "a",
+      "form": "{}",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "a",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 2,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "b26304a0-f49c-11e9-8487-c5a7ea76fe8d",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "After-Edit-D",
+      "form": "%7B%221%22%3A%7B%22type%22%3A%22textInput%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%7D%2C%222%22%3A%7B%22type%22%3A%22switch%22%2C%22rules%22%3A%5B%22required%22%5D%2C%22prompt%22%3A%22What%20is%20Your...%20%3F%22%2C%22defaultValue%22%3Afalse%7D%7D",
+      "image": "https://publicus-file-uploads.s3.amazonaws.com/form/026300a0-f58c-11e9-9232-7f3bf77ba83a",
+      "instructions": null,
+      "myRating": null,
+      "name": "After-Edit",
+      "numResponses": null,
+      "price": 2,
+      "publishedStatus": 3,
+      "receiveNotifications": 0,
+      "redirect": "",
+      "surveyId": "ba665a40-f58b-11e9-9b29-99ffbf733bb5",
+      "tags": Array [
+        Object {
+          "tag": "123",
+        },
+        Object {
+          "tag": "213",
+        },
+      ],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+    Object {
+      "description": "b",
+      "form": "%7B%7D",
+      "image": "https://designshack.net/wp-content/uploads/placeholder-image.png",
+      "instructions": null,
+      "myRating": null,
+      "name": "b",
+      "numResponses": null,
+      "price": 1,
+      "publishedStatus": 1,
+      "receiveNotifications": 1,
+      "redirect": "",
+      "surveyId": "4fe4b2c0-f4a5-11e9-87b0-6785951dc893",
+      "tags": Array [],
+      "userId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    },
+  ],
+  "loadMore": false,
+  "loading": false,
+  "paymentVisible": false,
+  "search": "medical",
+  "selectedForm": null,
+}
+`;

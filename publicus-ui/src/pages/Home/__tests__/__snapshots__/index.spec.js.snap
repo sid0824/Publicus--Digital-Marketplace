@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render authenticated home page 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": "100%",
+      "justifyContent": "center",
+      "margin": "auto",
+      "paddingBottom": 200,
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "marginRight": 50,
+      }
+    }
+  >
+    <Icon
+      style={
+        Object {
+          "color": "#1890ff",
+          "fontSize": 200,
+          "marginTop": 15,
+        }
+      }
+      type="yuque"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "textAlign": "center",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "fontSize": 60,
+        }
+      }
+    >
+      Welcome to Publicus!
+    </div>
+    <div
+      style={
+        Object {
+          "fontSize": 20,
+        }
+      }
+    >
+      An online tool for creating and publishing forms
+      <br />
+      Begin by 
+      <Link
+        to="/createForm"
+      >
+        creating a form
+      </Link>
+      <br />
+      Or 
+      <Link
+        to="/marketplace"
+      >
+        visiting the marketplace
+      </Link>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home should render un-authenticated home page 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": "100%",
+      "justifyContent": "center",
+      "margin": "auto",
+      "paddingBottom": 200,
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "marginRight": 50,
+      }
+    }
+  >
+    <Icon
+      style={
+        Object {
+          "color": "#1890ff",
+          "fontSize": 200,
+          "marginTop": 15,
+        }
+      }
+      type="yuque"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "textAlign": "center",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "fontSize": 60,
+        }
+      }
+    >
+      Welcome to Publicus!
+    </div>
+    <div
+      style={
+        Object {
+          "fontSize": 20,
+        }
+      }
+    >
+      An online tool for creating and publishing forms
+      <br />
+      <Link
+        to="/createAccount"
+      >
+        Create an account
+      </Link>
+       or 
+      <Link
+        to="/login"
+      >
+        login
+      </Link>
+       to begin
+    </div>
+  </div>
+</div>
+`;

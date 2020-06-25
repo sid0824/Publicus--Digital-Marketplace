@@ -1,0 +1,16 @@
+[
+  {
+    "resultsId": 62,
+    "surveyId": "4a78b760-f607-11e9-828e-67793e9d1653",
+    "creatorId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    "results": "%7B%221%22%3A%22a@b.com%22%2C%222%22%3Anull%2C%223%22%3A%221%22%2C%224%22%3Anull%2C%225%22%3A%222019-10-24T02%3A46%3A09.000Z%22%2C%226%22%3Anull%2C%227%22%3A%222%22%7D",
+    "submissionTime": "2019-10-24T02:45:29.000Z"
+  },
+  {
+    "resultsId": 63,
+    "surveyId": "4a78b760-f607-11e9-828e-67793e9d1653",
+    "creatorId": "ap-southeast-2:91ecfa27-a7c0-45a8-9f45-c93885409ca7",
+    "results": "%7B%221%22%3A%22a@b.com%22%2C%222%22%3Anull%2C%223%22%3A%221%22%2C%224%22%3Atrue%2C%225%22%3A%222019-10-24T02%3A46%3A09.000Z%22%2C%226%22%3Anull%2C%227%22%3A%222%22%7D",
+    "submissionTime": "2019-10-24T02:46:25.000Z"
+  }
+]
